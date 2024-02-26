@@ -1,0 +1,356 @@
+.hero-home, .bakery, .locations, .celebrations {
+    width: 80%;
+    margin: 50px auto 30px auto;
+}
+
+p {
+    line-height: 25px;
+    text-align: center;
+}
+
+.button-container button, .celebrations button {
+    background-color: #b43257;
+    color: #fff;
+    padding: 16px 30px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.button-container button:hover, .celebrations button:hover {
+    background-color:#81094e;
+    transition: ease-in-out .4s;
+}
+
+/* HERO */
+.hero-home {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 120px;
+}
+
+.hero-home-content {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.donut1 {
+    grid-column: 1;
+    grid-row: 2/2;
+    height: 400px;
+    margin: 50px auto 0 auto;
+}
+
+.hero-home-content h1 {
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.different {
+    font-family: "Protest Riot"
+}
+
+.hero-home-content p {
+    margin-top: 10px;
+}
+
+/* BAKERY */
+.bakery {
+    position: relative;
+}
+
+.bakery h2 {
+    margin: 0 auto ;
+    text-align: center;
+}
+
+.bakery p {
+    margin-top: 15px;
+}
+
+.gallery-container {
+    position: relative;
+}
+
+.gallery-container img {
+    position: relative;
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.bi-chevron-left, .bi-chevron-right {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    color: #fff;
+    cursor: pointer;
+    font-size: 45px;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    border-radius: 50%;
+}
+
+.bi-chevron-left {
+  left: 25px;
+}
+
+.bi-chevron-right {
+    right: -20px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+
+/* LOCATIONS */
+.locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    align-items: center;
+}
+
+.locations h2 {
+    grid-column: span 2;
+    text-align: center;
+    margin: 20px auto 15px auto;
+}
+
+.locations p {
+    margin: 10px 0;
+    grid-column: span 2;
+}
+
+.locations-card {
+    margin: 15px auto 0 auto;
+    width: 100%;
+    text-align: center;
+    display: block;
+    grid-column: span 2;
+}
+
+.tel, .bi-telephone {
+    color: #573b34; 
+    font-size: 16px;
+}
+
+.locations-card h3 {
+    font-size: 18px;
+    display: inline;
+    margin-right: 15px;
+}
+
+.delivery {
+    grid-column: span 2;
+    position: relative;
+    margin-top: 30px;
+}
+
+.delivery img {
+    width: 100%;
+    position: relative;
+    filter: brightness(35%);
+    border-radius: 10px;
+}
+
+.delivery p {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%);
+    z-index: 10;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* CELEBRATIONS */
+.celebrations h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.celebrations p {
+    margin-bottom: 10px;
+}
+
+.celebrations ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.celebrations ul img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 891px) {
+
+    .hero-home-content h1 {
+        font-size: 36px;
+    }
+    
+    .hero-home-content p, .bakery p, .locations p, .celebrations p {
+        font-size: 18px;
+    }
+
+    .donut1 {
+        height: 500px;
+    }
+
+    .bakery h2, .locations h2, .celebrations h2 {
+        font-size: 28px;
+    }
+
+    .gallery-container {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .locations-card ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .locations-card ul li {
+        grid-column: span 1;
+    }
+
+    .locations-card h3, .bi-telephone, .tel {
+        font-size: 20px;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .hero-home {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .hero-home-content {
+        grid-row: 1/2;
+        margin-top: 200px;
+    }
+
+    .hero-home-content h1 {
+        font-size: 50px;
+    }
+
+    .donut1 {
+        height: 600px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .bakery {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: auto;
+        margin-bottom: 120px;
+    }
+
+    .bakery-content {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        margin-top: 100px;
+    }
+
+    .bakery-content h2, .bakery-content p {
+        text-align: left;
+    }
+
+    .bakery h2, .locations h2, .celebrations h2 {
+        font-size: 32px;
+    }
+
+    .delivery {
+        margin-bottom: 120px;
+    }
+
+    .gallery-container {
+        grid-row: 1;
+        grid-column: 1/2;
+    }
+
+    .button-container {
+        grid-row: 1;
+        grid-column: 2;
+        margin-top: 330px;
+    }
+
+    .button-container button {
+        display: block;
+    }
+
+    .locations-card ul {
+        width: 100%;
+    }
+
+    .locations-card ul li {
+        text-align: center;
+    }
+
+    .delivery p {
+        font-size: 25px;
+    }
+
+   .order-button, .celebrate {
+        margin-top: 0;
+   }
+
+    .order, .celebrate-button {
+        margin: 0 auto;
+    }
+
+    .celebrations {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .hero-home, .bakery, .locations, .celebrations {
+        width: 50%;
+    }
+
+    .hero-home-content {
+        margin-top: 300px;
+    }
+
+    .hero-home-content h1 {
+        font-size: 60px;
+    }
+
+    .hero-home-content p {
+        font-size: 20px;
+    }
+
+    .donut1 {
+        height: 750px;
+    }
+
+    .bakery-content h2, .locations h2, .celebrations h2 {
+        font-size: 34px;
+    }
+
+    .celebrations ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
