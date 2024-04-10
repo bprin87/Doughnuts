@@ -1,0 +1,113 @@
+.hero-wholesale {
+  margin-top: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/wholesale.png");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 30px;
+}
+
+.hero-wholesale-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-wholesale-content h1 {
+  color: #fff;
+  font-size: 3.2rem;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.join-us {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.join-us h1, .join-us h2 {
+  text-align: center;
+}
+
+.join-us h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.join-us p {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.bi-chevron-double-down {
+  margin-left: 10px;
+}
+
+.join-us h2 {
+  margin-top: 40px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.input {
+  grid-column: auto;
+  margin-bottom: 10px;
+}
+
+.input input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.enquiry {
+  grid-column: span 2;
+}
+
+.enquiry textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+@media only screen and (min-width: 891px) {
+  .hero-wholesale-content h1 {
+    font-size: 4.5rem;
+  }
+  .join-us {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-about {
+    height: 500px;
+  }
+  .hero-wholesale-content h1 {
+    font-size: 6rem;
+  }
+  .join-us {
+    width: 60%;
+  }
+  .join-us h2 {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=Wholesale.css.map */
