@@ -1,0 +1,79 @@
+#doughnuts {
+  width: 90%;
+  margin: 80px auto 30px auto;
+}
+
+#doughnuts h1 {
+  font-size: 2rem;
+}
+
+#doughnuts h1, main p {
+  text-align: center;
+}
+
+#doughnuts ul {
+  display: grid;
+  gap: 5px 15px;
+  justify-content: center;
+}
+
+#doughnuts li {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  background-color: #fff;
+  border: 1px solid hsl(40, 48%, 49%);
+  height: 120px;
+  width: 500px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+figure h3 {
+  margin: 5px;
+  font-weight: 600;
+}
+
+figure p {
+  text-align: left;
+  margin-left: 5px;
+  font-weight: 100;
+}
+
+#doughnuts img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100px;
+  height: auto;
+}
+
+@media only screen and (min-width: 891px) {
+  #doughnuts {
+    width: 50%;
+  }
+  #doughnuts ul {
+    grid-template-columns: 1fr 1fr;
+  }
+  #doughnuts li {
+    grid-template-columns: 300px 1fr;
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #doughnuts {
+    width: 40%;
+  }
+
+  #doughnuts li {
+    grid-template-columns: 400px 1fr;
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+
+  #doughnuts li {
+    grid-template-columns: 500px 1fr;
+    width: 600px;
+  }
+}
