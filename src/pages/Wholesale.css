@@ -29,7 +29,7 @@
   margin: 50px auto;
 }
 
-.join-us h1, .join-us h2 {
+.join-us h2, .join-us h3 {
   text-align: center;
 }
 
@@ -47,8 +47,9 @@
   margin-left: 10px;
 }
 
-.join-us h2 {
+.join-us h3 {
   margin-top: 40px;
+  font-size: 1.4rem;
 }
 
 form {
@@ -57,12 +58,14 @@ form {
 
 form ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .input {
-  grid-column: auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
   margin-bottom: 10px;
 }
 
@@ -96,6 +99,25 @@ label {
   .join-us {
     width: 70%;
   }
+
+  .join-us h2 {
+    font-size: 3rem;
+  }
+
+  .join-us h3 {
+    font-size: 2rem;
+  }
+
+  form ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  .input {
+    grid-column: auto;
+    margin-bottom: 10px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .hero-about {
@@ -105,9 +127,16 @@ label {
     font-size: 6rem;
   }
   .join-us {
-    width: 60%;
+    width: 50%;
   }
   .join-us h2 {
     font-size: 3rem;
   }
-}/*# sourceMappingURL=Wholesale.css.map */
+}
+
+@media only screen and (min-width: 1400px) {
+
+  .join-us {
+    width: 40%;
+  }
+}
