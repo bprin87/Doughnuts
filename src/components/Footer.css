@@ -1,74 +1,72 @@
 footer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-    width: 100%;
-    background-color: #573B34;;
-    
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+  background-color: #573B34;
+  position: absolute;
+  bottom: 0;
+  height: 300px;
 }
 
 .quick-links, .locations {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .logo2 {
-    grid-row: 1;
-    grid-column: 2/5;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+  grid-row: 1;
+  grid-column: 2/5;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .logo2 img {
-    height: 40px;
+  height: 40px;
 }
 
 .quick-links {
-    grid-row: 2;
-    grid-column: 1/6;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  grid-row: 2;
+  grid-column: 1/6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .locations-links {
-    grid-row: 3;
-    grid-column: 1/6;
-    display: flex;
-    justify-content: center;
+  grid-row: 3;
+  grid-column: 1/6;
+  display: flex;
+  justify-content: center;
 }
 
 .social-media {
-    grid-row: 4;
-    grid-column: 2/5;
-    display: flex;
-    justify-content: center;
+  grid-row: 4;
+  grid-column: 2/5;
+  display: flex;
+  justify-content: center;
 }
 
 footer ul a {
-    text-transform: capitalize;
-    margin-right: 15px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 100;
+  text-transform: capitalize;
+  margin-right: 15px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 100;
 }
 
-.bi-facebook, .bi-instagram, .bi-twitter, .bi-envelope-fill  {
-    font-size: 1.5rem;
+.bi-facebook, .bi-instagram, .bi-twitter, .bi-envelope-fill {
+  font-size: 1.5rem;
 }
 
 /* IPAD SCREEN SIZE */
 @media only screen and (min-width: 891px) {
-
-    footer ul a {
-        font-size: 14px;
-    }
-    .bi-facebook, .bi-instagram, .bi-envelope-fill  {
-        font-size: 18px;
-    }
-
+  footer ul a {
+    font-size: 14px;
+  }
+  .bi-facebook, .bi-instagram, .bi-envelope-fill {
+    font-size: 18px;
+  }
 }
-
-/* DESKTOP SCREEN SIZE */
-@media only screen and (min-width: 1200px) {}
+/* DESKTOP SCREEN SIZE */ /*# sourceMappingURL=Footer.css.map */
