@@ -2,11 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Radio Canada", sans-serif;
+  font-family: "Radio Canada", sans-serif;
 }
 
 body {
   background-color: #fff8ec;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 300px;
 }
 
 ul {
@@ -14,11 +22,9 @@ ul {
 }
 
 h1, h2, h3, p, a {
-  color: #573b34; 
+  color: #573b34;
 }
 
 a {
   text-decoration: none;
 }
-
-
