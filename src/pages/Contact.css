@@ -1,0 +1,107 @@
+.hero-contact {
+  margin-top: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/addicted.png");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 30px;
+}
+
+.hero-contact-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.hero-contact-content h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.contact-us {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.contact-us h2 {
+  margin-bottom: 20px;
+}
+
+.contact-us h2, .contact-us h3, .contact-us p {
+  text-align: center;
+}
+
+.contact-us h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mailing-list {
+  width: 80%;
+  margin: 10px auto 0 auto;
+}
+
+.mailing-list input {
+  width: 75%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding-left: 5px;
+}
+
+.mailing-list button {
+  height: 40px;
+  width: 20%;
+  margin-left: 2px;
+  background-color: #b43257;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mailing-list button:hover {
+  background-color: #81094e;
+  transition: ease-in-out 0.4s;
+}
+
+@media only screen and (min-width: 891px) {
+  .hero-contact-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .contact-us h2 {
+    font-size: 2rem;
+  }
+
+  .contact-us h3 {
+    font-size: 1.4rem;
+    margin-top: 40px;
+  }
+
+  .mailing-list {
+    width: 60%;
+  }
+
+  @media only screen and (min-width: 1200px) {
+
+    .contact-us {
+      width: 70%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+
+  .contact-us {
+    width: 50%;
+  }
+}
