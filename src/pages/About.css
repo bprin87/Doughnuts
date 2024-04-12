@@ -1,69 +1,74 @@
 .hero-about {
-    margin-top: 50px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/red-velvets-2.jpg");
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 10;
+  margin-top: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/red-velvets-2.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-about-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-about-content h1 {
-    color: #fff;
-    font-size: 3.2rem;
-    text-shadow: 0 0 30px rgba(0,0,0,.7);
+  color: #fff;
+  font-size: 3.2rem;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
 .about {
-    width: 80%;
-    margin: 50px auto;
+  width: 80%;
+  margin: 50px auto;
 }
 
 .about h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .about p {
-    margin-top: 20px;
-    line-height: 30px;
+  margin-top: 20px;
+  line-height: 30px;
 }
 
 @media only screen and (min-width: 891px) {
-
-    .hero-about-content h1 {
-        font-size: 4.5rem;
-    }
-
-    .about {
-        width: 70%;
-    }
+  .hero-about-content h1 {
+    font-size: 4.5rem;
+  }
+  .about {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-about {
+    height: 500px;
+  }
+  .hero-about-content h1 {
+    font-size: 6rem;
+  }
+  .about {
+    width: 60%;
+  }
+  .about h2 {
+    font-size: 3rem;
+  }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
 
-    .hero-about {
-        height: 500px;
-    }
+  .about {
+    width: 50%;
+  }
 
-    .hero-about-content h1 {
-        font-size: 6rem;
-    }
+  .about h2 {
+    text-align: left;
+  }
 
-    .about {
-        width: 60%;
-    }
-
-    .about h2 {
-        font-size: 3rem;
-    }
 }
