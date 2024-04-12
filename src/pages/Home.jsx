@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
 import './Home.css'
 import Navigation from '../components/Navigation.jsx'
 import Footer from '../components/Footer.jsx'
@@ -46,7 +46,7 @@ function Home() {
         }
     }
 
-    // go to previous imagw
+    // go to previous image
     const handlePreviousImage = () => {
         if (previousImage) {
             setIndex(index - 1);
@@ -60,21 +60,22 @@ function Home() {
     return (
         <>
             <Navigation/>
-
-            {/* Main Content */}
             <main>
-                {/* Hero */}
+               
                 <section className="hero-home">
                     <div className="hero-home-content">
                         <h1>Doughnuts Made <span className='different'>Different</span></h1>
                         <p>Dipped, dusted, and deep-filled doughnuts. Made by hand in Manchester, delivered across England, Wales, and Scotland!</p>
+                        <div className='button-container order-button'>
+                        <Link to="/doughnuts"><button className='order'>Order now</button></Link>
+                        </div>
                     </div>
-                    <img className='donut1' src={donut1} alt='picture of donuts flying towards the screen'></img>
+                    <img className='donut1' src={donut1} alt='picture of donuts flying towards the screen'></img> 
+                    
                 </section>
 
-                {/* Bakery */}
                 <section className='bakery'>
-                    <div className='bakery-content'>
+                    <div className='bakery-content'> 
                         <h2>Take a peek inside our Manchester bakery...</h2>
                         <p>We spend our time baking handmade doughnuts for you to fill your hole with. Take a peek inside our Manchester bakery to see how they’re made.</p>
                         <div className='button-container'><a href='#'><button type='button'>Learn more</button></a></div>
@@ -88,7 +89,6 @@ function Home() {
                     </div>
                 </section>
 
-                {/* Locations */}
                 <section className='locations'>
                     <h2>You can find our delish Ds in more places than ever!</h2>
                     <p>Obey your rumble and tuck in at any of our Manchester, Stockport, Bolton or Bury stores - either box it up and go, or stick around with a coffee, it’s totally up to you. </p>
@@ -102,14 +102,13 @@ function Home() {
                     </article>
                     <article className='delivery'>
                         <p>Fear not! Doughnuts Delivered lets you get your favourite doughnut flavours right to your door!</p>
-                        <img src={delivery}></img>
+                        <img src={delivery} alt='doughnuts piled on top of each other'></img>
                         <div className='button-container order-button'>
-                            <a href='#'><button className='order'>Order now</button></a>
+                        <Link to="/doughnuts"><button className='order'>Order now</button></Link>
                         </div>
                     </article>
                 </section>
 
-                {/* Celebrate */}
                 <section className='celebrations'>
                     <h2>Celebrate with something different</h2>
                     <p>Whether you’re celebrating a birthday, a wedding or just making it through to Friday, say it with fresh doughnuts. 
