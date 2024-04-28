@@ -7,11 +7,7 @@ function About() {
     return (
         <>
             <Navigation/>
-
-            {/* Main Content */}
-            <main>
-
-                {/* Hero */}
+            <main id="about-us">
                 <section className="hero-about">
                     <div className="hero-about-content">
                         <h1>Our Story</h1>

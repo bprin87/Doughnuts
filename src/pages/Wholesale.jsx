@@ -1,7 +1,7 @@
 import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
 import './Wholesale.css'
-import {useRef} from 'react';
+import {useRef, useState} from 'react';
 
 function Wholesale() {
 
@@ -15,6 +15,19 @@ function Wholesale() {
             behavior: 'smooth',
         });
     };
+
+    const [inputValue, setInputValue] = useState('');
+
+    // clear input value after email address submitted
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setInputValue('');
+    }
+
+    // update input value 
+    const handleChange = (e) => {
+        setInputValue(e.target.value);
+    }
 
     return (
 
@@ -32,7 +45,7 @@ function Wholesale() {
                 </div>
 
                 <section className="join-us">
-                    <h1>Wholesale Doughnuts</h1>
+                    <h2>Wholesale Doughnuts</h2>
                     <p>We’ve already got a number of stockists outside of our stores – 
                     including coffee shops and eateries – so why not join the club? You 
                     can have our bright, bold and curvaceous buns to add to your store, 
@@ -42,32 +55,34 @@ function Wholesale() {
                     to you. We’re knee-deep in batter at the moment, but we’ll be in touch 
                     about the doughnuts wholesale process.</p>
 
-                    <h2>Enquire Now</h2>
+                    <h3>Enquire Now</h3>
 
-                    <form ref={enquiry}>
+                    <form ref={enquiry} onSubmit={handleSubmit}>
                         <ul>
                             <li className="input">
                                 <label>Name</label>
-                                <input type="text"></input>
+                                <input type="text" required></input>
                             </li>
                             <li className="input">
                                 <label>Company</label>
-                                <input type="text"></input>
+                                <input type="text" required></input>
                             </li>
                             <li className="input">
                                 <label>Phone Number</label>
-                                <input type="text"></input>
+                                <input type="number" min={10} required></input>
                             </li>
                             <li className="input">
                                 <label>Email Address</label>
-                                <input type="text"></input>
+                                <input type="email" required></input>
                             </li>
                             <li className="enquiry">
                                 <label>Enquiry</label>
-                                <textarea></textarea>
+                                <textarea required></textarea>
                             </li>
-                            Submit button
                         </ul>
+                        <div className='button-container'>
+                            <a><button type="submit" className='order' onChange={handleChange}>Submit</button></a>
+                        </div>
                     </form>
 
                 </section>

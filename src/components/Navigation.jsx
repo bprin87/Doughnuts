@@ -40,10 +40,10 @@ function Navigation() {
                 </div>
                 <ul className={displayMobileMenu ? 'is-active' : ''}>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/About">About Us</Link></li>
-                    <li><a href="#">Doughnuts</a></li>
-                    <li><a href="#">Wholesale</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/doughnuts">Doughnuts</Link></li>
+                    <li><Link to="/wholesale">Wholesale</Link></li>
+                    <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
             </nav>
         </header>
